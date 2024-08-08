@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+
+        #controls {
+            display: flex;
+            left: 0;
+            top: 0;
+        }
+
+        #pauseButton {
+            font-size: 30px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 20px;
+            top: 20px;
+
+        }
+
+        #scoreboard {
+            position: absolute;
+            right: 50px;
+            top: 20px;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="controls">
+        <button id="pauseButton">▶</button>
+        <p id="scoreboard">Score: <span id="score">0</span></p>
+    </div>
+    <canvas id="gameCanvas" width="1780" height="800"></canvas>
+    <script src="game.js"></script>
+</body>
+
+</html>
